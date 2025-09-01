@@ -1,17 +1,14 @@
 # SolidOSmobile
 SolidOS for android and iOS that is in progress
 
+This is a tutorial on how to run SolidOS natively for iOS or Android. No plans for Pine as of now.
 
-This is a tutorial on how to run SolidOS for iOS or Android. There has not been a Pine port just yet.
+JDK 21 issues at the moment is not allowing qemu emulator to function properly. libandroid emu metrics dll issues. But JDK21 seems the most compatible. 
 
-This will be a native support application with cross compatibility for Android and iOS
-
-You may run into repository issues below.
-
+JDK 24 issues below
 assembleDebug being the worst of them. Literally none of the tutorials worked on this, so I just moved my building habits directly from VSCode to Android Studio.
 --enable-native-access=ALL-UNNAMED
-capacitor.settings.gradle
-
+File capacitor.settings.gradle will prevent you from proceeding further until you remove "capacitor" from the file itself, then just runs into more bugs.
 
 Initially used Git for Windows which has bash functionality and scripts that emulate Linux commands. *Personal choice of my own. The less libraries and extensions, then simplier the execution of the project and that is my goal here.
 
@@ -32,15 +29,6 @@ node-v22.19.0-x64
 Git-2.51.0-64-bit
 Cygwin 2.934
 Git-2.51.0-64-bit
-
-in package.json
- "dependencies": {
-    "@capacitor/android": "^7.4.3",
-    "@capacitor/camera": "latest",
-    "@capacitor/core": "latest",
-    "@capacitor/splash-screen": "latest",
-    "@tailwindcss/vite": "^4.1.12"
-
 
 
 
